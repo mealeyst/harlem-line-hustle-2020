@@ -19,8 +19,8 @@ const BackgroundSVG: FunctionComponent<BackgroundSVGProps> = ({className, color 
         <feGaussianBlur stdDeviation="10">
         <animate
           attributeName="stdDeviation"
-          values="10;12;8;10"
-          dur="3s"
+          values="15;18;15;13;15"
+          dur="15s"
           repeatCount="indefinite"
         />
         </feGaussianBlur>
