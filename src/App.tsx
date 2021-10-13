@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <GlobalFonts />
       <DefaultColors />
-      <header>
+      <header style={{position: "fixed", top: 0, left: 0, width: '100%'}}>
         <Navigation>
           <GlitchLink>About</GlitchLink>
           <GlitchLink>Blog</GlitchLink>

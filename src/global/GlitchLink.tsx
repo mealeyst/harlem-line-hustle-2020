@@ -36,6 +36,7 @@ export default styled.a<LinkProps>`
   font-weight: ${({fontWeight = 'bold'}) => fontWeight};
   text-shadow: ${({color = colors.green.default}) => `${color} 0px 0px 0.7rem`};
   position: relative;
+  font-size: 140%;
   &:after {
     content: "${({children}) => children}";
     position: absolute;
