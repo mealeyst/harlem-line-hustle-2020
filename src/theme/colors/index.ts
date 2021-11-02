@@ -32,9 +32,9 @@ const green:Color = {
   2: 'hsl(122, 90%, 92%)',
   3: 'hsl(121, 90%, 88%)',
   4: 'hsl(121, 90%, 81%)',
-  5: 'hsl(120, 90%, 68%)',
-  6: 'hsl(120, 90%, 48%)',
-  7: 'hsl(120, 90%, 32%)',
+  5: 'hsl(120, 90%, 12%)',
+  6: 'hsl(120, 90%, 8%)',
+  7: 'hsl(120, 90%, 2%)',
 };
 
 green.default = green[4];
@@ -72,8 +72,12 @@ export default {
 }
 
 export const DefaultColors = createGlobalStyle`
-body {
+html {
   background-color: ${black.default};
   color: ${white.default};
+}
+body{
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzEyMTMxNyI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjMmQyZjM5Ij48L3JlY3Q+Cjwvc3ZnPg==");
+  min-height: 100vh;
 }
 `

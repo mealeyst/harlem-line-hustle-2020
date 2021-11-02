@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import styled from 'styled-components'
 
 export type CanvasProps = {
   className?: string
@@ -10,4 +11,9 @@ const Canvas: FunctionComponent<CanvasProps> = ({className}) => {
   );
 }
 
-export default Canvas
+const StyledCanvas = styled(Canvas)`
+  width: 100%;
+  height: 100%;
+`
+
+export default StyledCanvas
