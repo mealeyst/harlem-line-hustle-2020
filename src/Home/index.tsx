@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import Logo from './Logo';
 import Tout from './Tout';
 import Window from './Window';
 
@@ -11,7 +12,9 @@ export const Home: FunctionComponent<HomeProps> = ({className}) => {
   return (
     <section className={className}>
       <Window />
-      <Tout />
+      <Tout className='topLeft' />
+      <Logo />
+      <Tout className='topRight' type='topRight' />
     </section>
   )
 }
@@ -27,8 +30,23 @@ const StyledHome = styled(Home)`
     width: 100%;
   }
 
-  ${Tout} {
-    left: 40px;
+  ${Logo} {
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    top: 275px;
+    transform: translateX(-50%);
+  }
+
+  .topLeft {
+    left: 2.7%;
+    top: 200px;
+    position: absolute;
+    width: 37.5%;
+    max-width: 540px;
+  }
+  .topRight{
+    right: 2.7%;
     top: 200px;
     position: absolute;
     width: 37.5%;

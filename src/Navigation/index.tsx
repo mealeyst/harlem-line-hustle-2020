@@ -72,7 +72,9 @@ nav {
 }
 ul {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr [col-start]);
+  column-gap: 1rem;
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
@@ -80,12 +82,12 @@ ul {
   padding-right: 2rem;
   position: relative;
   z-index: 10;
+  padding: 0 13rem;
 }
 li{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
   &:last-of-type {
     margin-right: 0;
   }
